@@ -1,0 +1,53 @@
+column,description,use_for_prediction
+Type,Type of transaction made,YES - known at order time
+Days for shipping (real),Actual shipping days of the purchased product,NO - only known after shipping (leakage)
+Days for shipment (scheduled),Days of scheduled delivery of the purchased product,YES - known at order time
+Benefit per order,Earnings per order placed,CAREFUL - calculated after the sale
+Sales per customer,Total sales per customer made per customer,YES - known at order time
+Delivery Status,"Delivery status of orders: Advance shipping , Late delivery , Shipping canceled , Shipping on time",NO - only known after shipping (leakage)
+Late_delivery_risk,"Categorical variable that indicates if sending is late (1), it is not late (0).",NO - only known after shipping (leakage)
+Category Id,Product category code,YES - known at order time
+Category Name,Description of the product category,YES - known at order time
+Customer City,City where the customer made the purchase,YES - known at order time
+Customer Country,Country where the customer made the purchase,YES - known at order time
+Customer Email,Customer's email,DROP - personal info or no information
+Customer Fname,Customer name,DROP - personal info or no information
+Customer Id,Customer ID,YES - known at order time
+Customer Lname,Customer lastname,DROP - personal info or no information
+Customer Password,Masked customer key,DROP - personal info or no information
+Customer Segment,"Types of Customers: Consumer , Corporate , Home Office",YES - known at order time
+Customer State,State to which the store where the purchase is registered belongs,YES - known at order time
+Customer Street,Street to which the store where the purchase is registered belongs,DROP - personal info or no information
+Customer Zipcode,Customer Zipcode,YES - known at order time
+Department Id,Department code of store,YES - known at order time
+Department Name,Department name of store,YES - known at order time
+Latitude,Latitude corresponding to location of store,YES - known at order time
+Longitude,Longitude corresponding to location of store,YES - known at order time
+Market,"Market to where the order is delivered : Africa , Europe , LATAM , Pacific Asia , USCA",YES - known at order time
+Order City,Destination city of the order,YES - known at order time
+Order Country,Destination country of the order,YES - known at order time
+Order Customer Id,Customer order code,YES - known at order time
+order date (DateOrders),Date on which the order is made,YES - known at order time
+Order Id,Order code,YES - known at order time
+Order Item Cardprod Id,Product code generated through the RFID reader,YES - known at order time
+Order Item Discount,Order item discount value,YES - known at order time
+Order Item Discount Rate,Order item discount percentage,YES - known at order time
+Order Item Id,Order item code,YES - known at order time
+Order Item Product Price,Price of products without discount,YES - known at order time
+Order Item Profit Ratio,Order Item Profit Ratio,CAREFUL - calculated after the sale
+Order Item Quantity,Number of products per order,YES - known at order time
+Sales,Value in sales,YES - known at order time
+Order Item Total,Total amount per order,YES - known at order time
+Order Profit Per Order,Order Profit Per Order,CAREFUL - calculated after the sale
+Order Region,"Region of the world where the order is delivered :  Southeast Asia ,South Asia ,Oceania ,Eastern Asia, West Asia , West of USA , US Center , West Africa, Central Africa ,North Africa ,Western Europe ,Northern , Caribbean , South America ,East Africa ,Southern Europe , East of USA ,Canada ,Southern Africa , Central Asia ,  Europe , Central America, Eastern Europe , South of  USA",YES - known at order time
+Order State,State of the region where the order is delivered,YES - known at order time
+Order Status,"Order Status : COMPLETE , PENDING , CLOSED , PENDING_PAYMENT ,CANCELED , PROCESSING ,SUSPECTED_FRAUD ,ON_HOLD ,PAYMENT_REVIEW",NO - only known after shipping (leakage)
+Product Card Id,Product code,YES - known at order time
+Product Category Id,Product category code,YES - known at order time
+Product Description,Product Description,DROP - personal info or no information
+Product Image,Link of visit and purchase of the product,DROP - personal info or no information
+Product Name,Product Name,YES - known at order time
+Product Price,Product Price,YES - known at order time
+Product Status,"Status of the product stock :If it is 1 not available , 0 the product is available",DROP - personal info or no information
+Shipping date (DateOrders),Exact date and time of shipment,YES - known at order time
+Shipping Mode,"The following shipping modes are presented : Standard Class , First Class , Second Class , Same Day",YES - known at order time
